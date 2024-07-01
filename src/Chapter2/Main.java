@@ -1,4 +1,5 @@
-import Chapter2.WeatherData;
+package Chapter2;
+
 import Chapter2.display.CurrentConditionsDisplay;
 import Chapter2.display.ForeCastDisplay;
 import Chapter2.display.StatisticsDisplay;
