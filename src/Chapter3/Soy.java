@@ -1,7 +1,5 @@
 package Chapter3;
 
-import static javax.swing.text.StyleConstants.Size;
-
 public class Soy extends CondimentDecorator {
 	public Soy(Beverage beverage) {
 		this.beverage = beverage;
@@ -12,6 +10,14 @@ public class Soy extends CondimentDecorator {
 	}
 
 	public double cost() {
-		return .15 + beverage.cost();
+		double cost = beverage.cost();
+		if (beverage.getSize() == Beverage.Size.TALL) {
+			cost += .10;
+		} else if (beverage.getSize() == Beverage.Size.GRANDE) {
+			cost += .15;
+		} else if (beverage.getSize() == Beverage.Size.VENTI) {
+			cost += .20;
+		}
+		return cost;
 	}
 }
