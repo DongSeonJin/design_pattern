@@ -1,7 +1,6 @@
 package Chapter4.pizza2;
 
-public class ChicagoPizzaIngredientFactory 
-	implements PizzaIngredientFactory 
+public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory
 {
 
 	public Dough createDough() {
