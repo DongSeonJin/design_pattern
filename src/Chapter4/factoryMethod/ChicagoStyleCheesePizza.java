@@ -1,11 +1,11 @@
-package Chapter4;
+package Chapter4.factoryMethod;
 
 public class ChicagoStyleCheesePizza extends Pizza {
 
 	public ChicagoStyleCheesePizza() { 
 		name = "Chicago Style Deep Dish Cheese Pizza";
 		dough = "Extra Thick Crust Dough";
-		sauce = "Plum Tomato Sauce";
+		sauce = "Plum Toma;to Sauce";
  
 		toppings.add("Shredded Mozzarella Cheese");
 	}

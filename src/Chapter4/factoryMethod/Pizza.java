@@ -1,4 +1,4 @@
-package Chapter4;
+package Chapter4.factoryMethod;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,7 @@ abstract public class Pizza {
     String name;
     String dough;
     String sauce;
+
     List<String> toppings = new ArrayList<String>();
 
     public String getName() {

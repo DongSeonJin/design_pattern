@@ -1,4 +1,4 @@
-package Chapter4;
+package Chapter4.factoryMethod;
 
 public class NYPizzaStore extends PizzaStore {
 
