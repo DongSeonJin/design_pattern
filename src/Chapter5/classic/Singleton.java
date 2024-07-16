@@ -1,4 +1,4 @@
-package Chapter5;
+package Chapter5.classic;
 
 public class Singleton {
     private static Singleton uniqueSingleton;
