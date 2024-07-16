@@ -1,4 +1,4 @@
-package Chapter5.chocolate;
+package Chapter5.chocolateMultiTest;
  
 public class ChocolateBoiler {
 	private boolean empty;
@@ -12,10 +12,10 @@ public class ChocolateBoiler {
   
 	public static ChocolateBoiler getInstance() {
 		if (uniqueInstance == null) {
-			System.out.println("Creating unique instance of Chocolate Boiler");
+			System.out.println("Chocolate Boiler 유니크 인스턴스 생성");
 			uniqueInstance = new ChocolateBoiler();
 		}
-		System.out.println("Returning instance of Chocolate Boiler");
+		System.out.println("Chocolate Boiler 의 인스턴스를 리턴");
 		return uniqueInstance;
 	}
 
@@ -23,20 +23,17 @@ public class ChocolateBoiler {
 		if (isEmpty()) {
 			empty = false;
 			boiled = false;
-			// fill the boiler with a milk/chocolate mixture
 		}
 	}
  
 	public void drain() {
 		if (!isEmpty() && isBoiled()) {
-			// drain the boiled milk and chocolate
 			empty = true;
 		}
 	}
  
 	public void boil() {
 		if (!isEmpty() && !isBoiled()) {
-			// bring the contents to a boil
 			boiled = true;
 		}
 	}
