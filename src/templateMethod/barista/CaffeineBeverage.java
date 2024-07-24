@@ -1,23 +1,23 @@
 package templateMethod.barista;
 
-public abstract class CaffeineBeverage {
+public interface CaffeineBeverage {
   
-	final void prepareRecipe() {
+	default void prepareRecipe() {
 		boilWater();
 		brew();
 		pourInCup();
 		addCondiments();
 	}
  
-	abstract void brew();
+	void brew();
   
-	abstract void addCondiments();
+	void addCondiments();
  
-	void boilWater() {
+	default void boilWater() {
 		System.out.println("Boiling water");
 	}
   
-	void pourInCup() {
+	default void pourInCup() {
 		System.out.println("Pouring into cup");
 	}
 }
