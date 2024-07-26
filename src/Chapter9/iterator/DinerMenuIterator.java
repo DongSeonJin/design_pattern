@@ -2,11 +2,11 @@ package Chapter9.iterator;
 
 import java.util.Iterator;
 
-public class DinerManuIterator implements Iterator<MenuItem> {
+public class DinerMenuIterator implements Iterator<MenuItem> {
     MenuItem[] items;
     int position = 0;
 
-    public DinerManuIterator(MenuItem[] items) {
+    public DinerMenuIterator(MenuItem[] items) {
         this.items = items;
     }
     @Override
